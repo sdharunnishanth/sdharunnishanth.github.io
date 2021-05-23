@@ -1,0 +1,86 @@
+.skills{
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    font-size: 1.3rem;
+    scroll-snap-align:start;
+}
+.skills h2{
+    position: relative;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.lang1{
+    margin:0 0 0 5em;
+    position: relative;
+}
+
+.langtext{
+    text-align: center;
+    padding-right: 10em;
+}
+
+.lang2{
+    margin:0 0 0 5em;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.langlogos{
+    position: relative;
+    list-style-type: circle;
+}
+
+.tools{
+    margin:0 0 0 5em;
+    position: relative;
+}
+
+.toolslogos{
+    position: relative;   
+}
+
+.toolslogos ul{
+    list-style-type: circle;
+}
+
+.frameworklogos{
+    position: relative;
+    left:10em;
+    top:-9.4em;
+}
+
+.frameworklogos ul{
+    list-style-type: circle;
+}
+
+.resume{
+    padding:10em;
+    position: absolute;
+    top:-9em;
+    left:30em;
+    background: url("/images/sketch-active.png") center no-repeat;
+    background-size: 16em;
+    transition: .2s ease-in-out;
+}
+
+.resume:hover{
+    top:-9.5em;
+    left:30em;
+    background: url("/images/sketch-hover.png") center no-repeat;
+    background-size: 16em;
+}
+
+.tooltip{
+    padding:1em 2em 1em 2em;
+    font-size: .8rem;
+    position: absolute;
+    top:13em;
+    left:55em;
+    opacity: 1;
+}
+
+#and{
+    color:teal;
+}

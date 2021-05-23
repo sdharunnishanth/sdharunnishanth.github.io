@@ -1,0 +1,130 @@
+.about{
+    height: 100vh;
+    width:100%;
+    margin:0.5em 0;
+    padding:0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "content pic";
+    scroll-snap-align:start;
+}
+
+.picture{
+    grid-area: pic;
+    background: url("../images/me.jpeg") right no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.text{
+    grid-area: content;
+    /*background: rgb(3, 3, 34);
+    color: white;*/
+}
+
+.quote{
+    padding: 1em 5em;
+    text-align: center;
+    position: static;
+    font-size: 1.8rem;
+    margin: 7em 0 0 0;
+}
+
+.intro{
+    padding: 1em 5em;
+    position: static;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.quote span{
+    color:rgb(255, 255, 0);
+    font-size: 2rem;
+}
+
+.quote #I{
+    color: forestgreen;
+    font-size: 1.8rem;
+    font-style: normal;
+}
+
+#comma{
+    font-size: 1.2rem;
+    color:red;
+}
+
+#question{
+    color:orchid;
+}
+
+#period{
+    font-size: 1.2rem;
+    color: rgb(7, 135, 255);
+}
+
+#name{
+    font-variant: small-caps;
+    color:black;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#name::before{
+    content: ' ';
+    width: 2em;
+    height: .3em;
+    background: rgb(7, 135, 255,80%);
+    position: absolute;
+    top: .9em;
+    left: -.2em;
+    z-index: -1;
+}
+/*
+@media only screen and (max-width: 870px) {
+    .about{
+        height: 100vh;
+        width:100%;
+        margin: 0;
+        padding:0;
+        scroll-snap-align:start;
+        background: url("../images/me.jpeg") center no-repeat;
+        background-size: 20em;
+        background-attachment: fixed;
+        position: relative;
+    } 
+    .picture{
+      opacity:0;
+    }
+    .text{
+        position: relative;
+    }
+    .quote{
+        position:absolute;
+        top:0%;
+        left:32%;
+        padding:0;
+        margin:0;
+        width:100%;
+        background: white;
+    }
+    .intro{
+        position:absolute;
+        top:80%;
+        left:33.5%;
+        padding:0;
+        margin:0;
+        width:100%;
+        background: white;
+    }
+    #name::before{
+        content: ' ';
+        width: 2em;
+        height: .3em;
+        background: rgb(7, 135, 255,80%);
+        position: absolute;
+        top: .9em;
+        left: -.2em;
+        z-index: 1;
+    } 
+} */

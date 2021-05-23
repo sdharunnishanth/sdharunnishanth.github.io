@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Recursive&family=Lora:ital,wght@1,500&display=swap&family=Solwa&display=swap');
+
+html{
+    scroll-behavior: smooth;
+   scroll-snap-type: y mandatory;
+   overflow-x: hidden;
+/*     overflow: hidden;   */
+}
+
+body{
+    background-color:seashell;
+    margin:0;
+    font-family: 'Recursive', sans-serif;
+    font-size:1em;
+    position: relative;
+}
+
+body::-webkit-scrollbar{
+    width:0.35em;
+}
+
+body::-webkit-scrollbar-track{
+    background: rgb(7, 135, 255);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(150, 150, 150);
+    border:1px solid rgb(160, 160, 160);
+}
+
+.content{
+    position: relative;
+}
+
+.btn{
+    position: fixed;
+    top:0em;
+    left:25em;
+    z-index: 1;
+}
+
+.btn button{
+    cursor: pointer;
+    border: none;
+}
+
+.sun{
+    position: absolute;
+    left:0.5em;
+    opacity:0;
+    color: orangered;
+}
+
+.moon{
+    position: absolute;
+    left:0.5em;
+    opacity:1;
+    color: rgb(7, 135, 255);
+}
+
+/* GREETING TEXT */
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform: translateY(-2em);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0em);
+    }
+}
+
+@keyframes disappear{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+        z-index: 0;
+    }
+}
+
+@media (max-height: 610px), (max-width: 1320px) {
+    body{
+        background: url("/images/sketch-res.png") center no-repeat;
+        background-size: 450px;
+        background-attachment: fixed;
+        position: fixed;
+        vertical-align: middle;
+
+    }
+
+    .content{
+        opacity: 0;
+    }
+
+}

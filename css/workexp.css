@@ -1,0 +1,256 @@
+.work{
+    padding:0;
+    margin: 0;
+    height: 100vh;
+    scroll-snap-align:start;
+}
+
+.work h2{
+    font-size: 1.6rem;
+    text-align: center;
+    position: relative;
+}
+
+.work h3{
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.work h4{
+    font-variant: small-caps;
+    font-size: 2rem;
+}
+
+.experience{
+    margin:0;
+    padding:0;
+    display: grid;
+    color: black;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "intern pat pa";
+}
+
+.prog-ana{
+    font-size: .95rem;
+    margin:2em 1em 1em 1em;
+    position: relative;
+    padding: 0em 0em 20em 0em;
+    text-align: left;
+    top: 0;
+    border: solid .5px rgb(255, 104, 49);
+    transition: .5s ease-in;
+    grid-area: pa;
+}
+
+.prog-ana h3{
+    position: absolute;
+    left:3.5em;
+    transition: .3s ease-in-out;
+}
+
+.prog-ana h4{
+    position: absolute;
+    left:3.5em;
+    top:1em;
+    transition: .3s ease-in-out;
+}
+
+.prog-ana p{
+    opacity:0;
+    transition: .2s ease-in-out;
+    position: absolute;
+    left:-2em;
+    top:3.5em;
+    font-size: 1.2rem;
+}
+
+.prog-ana #logo{
+    left:7em;
+    top:7em;
+    transition: .3s ease-in-out;
+}
+
+.prog-ana:hover h3{
+    font-size: 1.2rem;
+    left:7.5em;
+}
+
+.prog-ana:hover h4{
+    font-size: 1.2rem;
+    left:7.5em;
+}
+
+.prog-ana:hover p{
+    opacity:1;
+    padding: 0.2em 0.2em 0 9.5em;
+}
+
+.prog-ana:hover #logo{
+    top: -1.4em;
+    left: 0em;
+    height: 7.5em;
+    width: 9em;
+}
+
+.prog-ana:hover{
+    background-color:rgba(255, 127, 80, 0.8) ;
+}
+
+.prog-ana-trainee{
+    font-size: .95rem;
+    margin:3em 1em 0em 1em;
+    position: relative;
+    text-align: left;
+    padding: 0em 0em 20em 0em;
+    top: 7em;
+    border: solid .5px chartreuse;
+    grid-area: pat;
+    transition: .2s ease-in-out;
+}
+
+.prog-ana-trainee h3{
+    position: absolute;
+    left:3em;
+    transition: .3s ease-in-out;
+}
+
+.prog-ana-trainee h4{
+    position: absolute;
+    left:3.2em;
+    top:1em;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.prog-ana-trainee p{
+    opacity:0;
+    transition: .2s ease-in-out;
+    position: absolute;
+    top:5em;
+    left:0em;
+    font-size: 1.2rem;
+}
+
+.prog-ana-trainee #logo{
+    left:7em;
+    top:7em;
+    transition: .3s ease-in-out;
+}
+
+.prog-ana-trainee:hover h3{
+    font-size: 1.2rem;
+    left:7.5em;
+}
+
+.prog-ana-trainee:hover h4{
+    font-size: 1.2rem;
+    left:7.5em;
+}
+
+.prog-ana-trainee:hover p{
+    opacity:1;
+    left:-2em;
+    padding: 0.2em 0.2em 0 9.5em;
+}
+
+.prog-ana-trainee:hover #logo{
+    top: -1.4em;
+    left: 0em;
+    height: 7.5em;
+    width: 9em;
+}
+
+.prog-ana-trainee:hover{
+    background-color: rgba(153, 205, 50, 0.8);
+    border: none;
+}
+
+.intern{
+    font-size: .95rem;
+    margin:3em 1em 0em 1em;
+    position: relative;
+    padding: 0.2em 0.2em 0 9.5em;
+    text-align: left;
+    top:15em;
+    border: solid .5px rgb(36, 252, 230);
+    grid-area: intern;
+    transition: .2s ease-in-out;
+}
+
+.intern h3{
+    position: absolute;
+    left:1em;
+    transition: .3s ease-in-out;
+}
+
+.intern h4{
+    transition: .3s ease-in-out;
+    position: absolute;
+    left:4em;
+    top:2em;
+}
+
+.intern p{
+    opacity:0;
+    font-size: 1.2rem;
+    transform: translate(-4em,3em);
+    transition: .3s ease-in-out;
+}
+
+.intern #logo{
+    left:6em;
+    top:8em;
+    transition: .3s ease-in-out;
+}
+
+.intern:hover h3{
+    font-size: 1.2rem;
+    left:7.5em;
+    top:0em;
+}
+
+.intern:hover h4{
+    font-size: 1.2rem;
+    left:7.5em;
+    top:1em;
+}
+
+.intern:hover p{
+    opacity:1;
+    transform: translate(0em,3em);
+}
+
+.intern:hover #logo{
+    top: -1.4em;
+    left: 0em;
+    height: 7.5em;
+    width: 9em;
+}
+
+.intern:hover{
+    background-color:rgba(64, 224, 208, 0.8);
+    border: none;
+}
+
+#logo{
+    position: absolute;
+    height: 11.5em;
+    width: 14em;
+}
+
+#dash{
+    color: rgb(253, 0, 148);
+}
+
+#I{
+    color: forestgreen;
+    font-style: italic;
+}
+
+#bracket{
+    color:rgb(172, 47, 47);
+}
+
+#colon{
+    color:indigo;
+}
